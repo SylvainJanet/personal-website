@@ -105,7 +105,7 @@ a:hover {
 
 .paralax-mf {
   position: relative;
-  padding: 8rem 0;
+  padding: 2rem 0;
 }
 
 .display-table {
@@ -1267,5 +1267,57 @@ footer .credits a {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+  }
+}
+
+/* .content-test {
+  display: table;
+}
+
+.content-col {
+  display: table-row;
+  width: 100%;
+} */
+
+.content-test .comit,
+.content-test .description {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content-test .description {
+  width: 80%;
+  padding: 0 2rem;
+}
+
+.content-test .formation {
+  padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content-test .comit {
+    display: none;
+  }
+  .content-test .description {
+    font-size: 1.1em;
+    padding: 0 0.4rem;
+  }
+  .testimonial-box .author {
+    font-size: 0.8em;
+  }
+  .content-test .formation {
+    padding-top: 0rem;
+  }
+  .counter-ico .ico-circle {
+    height: 40px;
+    width: 40px;
+    line-height: 1.8;
+    box-shadow: 0 0 0 6px #cde1f8;
+  }
+  .ico-circle {
+    font-size: 1.3rem;
+  }
+  .paralax-mf {
+    padding: 1rem 0;
   }
 }
