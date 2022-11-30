@@ -46,7 +46,7 @@ try {
 
 try {
   document.getElementById("testDbrealIPhttps").textContent = httpGet(
-    "https://31.187.72.184:8080/test/hello"
+    "https://31.187.72.184:8443/test/hello"
   );
   console.log("Real backend with IP OK - https");
 } catch (error) {
@@ -56,7 +56,7 @@ try {
 
 try {
   document.getElementById("testDbrealPorthttps").textContent = httpGet(
-    "https://server.sylvainjanet.fr:8080/test/hello"
+    "https://server.sylvainjanet.fr:8443/test/hello"
   );
   console.log("Real backend with adress and port OK - https");
 } catch (error) {
