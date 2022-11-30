@@ -16,21 +16,21 @@ try {
 
 try {
   document.getElementById("testDbrealIP").textContent = httpGet(
-    "http://31.187.72.184:8080/test/hello"
+    "https://31.187.72.184:8080/test/hello"
   );
-  console.log("Real backend with IP OK - http");
+  console.log("Real backend with IP OK - http - http");
 } catch (error) {
-  console.log("Real backend not accessed with IP - http");
+  console.log("Real backend not accessed with IP - http - http");
   console.log(error);
 }
 
 try {
   document.getElementById("testDbrealPort").textContent = httpGet(
-    "http://server.sylvainjanet.fr:8080/test/hello"
+    "https://server.sylvainjanet.fr:8080/test/hello"
   );
-  console.log("Real backend with adress and port OK - http");
+  console.log("Real backend with adress and port OK - http - http");
 } catch (error) {
-  console.log("Real backend not accessed with adress and port - http");
+  console.log("Real backend not accessed with adress and port - http - http");
   console.log(error);
 }
 
@@ -70,6 +70,6 @@ try {
   );
   console.log("Real backend with adress OK - https");
 } catch (error) {
-  console.log("Real backend not accessed with adress - https");
+  console.log("Real backend not accessed with adress - https - https");
   console.log(error);
 }
