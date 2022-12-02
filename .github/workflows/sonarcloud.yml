@@ -43,6 +43,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          
       - name: Analyze with SonarCloud
 
         # You can pin the exact commit or the version.
@@ -58,8 +63,6 @@ jobs:
             # mandatory
             -Dsonar.projectKey=SylvainJanet_personal-website
             -Dsonar.organization=sylvainjanet
-            -Dsonar.sources=.
-            -Dsonar.projectBaseDir=/github/workspace
             # Comma-separated paths to directories containing main source files.
             #-Dsonar.sources=. # optional, default is project base directory
             # When you need the analysis to take place in a directory other than the one from which it was launched
