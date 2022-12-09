@@ -1,5 +1,5 @@
 function httpGet(theUrl) {
-  var xmlHttp = new XMLHttpRequest();
+  let xmlHttp = new XMLHttpRequest();
   xmlHttp.open("GET", theUrl, false); // false for synchronous request
   xmlHttp.send(null);
   return xmlHttp.responseText;
@@ -30,6 +30,26 @@ try {
   );
   console.log("Real backend with adress OK - https");
 } catch (error) {
-  console.log("Real backend not accessed with adress - https - https - https");
+  console.log("Real backend not accessed with adress - https");
+  console.log(error);
+}
+
+try {
+  document.getElementById("testDbrealdevPorthttps").textContent = httpGet(
+    "https://server.sylvainjanet.fr:8443/test-dev/hello"
+  );
+  console.log("Real dev backend with adress and port OK - https");
+} catch (error) {
+  console.log("Real dev backend not accessed with adress and port - https");
+  console.log(error);
+}
+
+try {
+  document.getElementById("testDbrealdevhttps").textContent = httpGet(
+    "https://server.sylvainjanet.fr/test-dev/hello"
+  );
+  console.log("Real dev backend with adress OK - https");
+} catch (error) {
+  console.log("Real dev backend not accessed with adress - https");
   console.log(error);
 }
