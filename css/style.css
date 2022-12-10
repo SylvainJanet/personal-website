@@ -1321,3 +1321,22 @@ footer .credits a {
     padding: 1rem 0;
   }
 }
+
+/* Main Style Stars from here  */
+.flag {
+  position: relative;
+  width: 15px;
+  height: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.flag-france {
+  background: linear-gradient(
+    to right,
+    #192f8e 33%,
+    #fff 33%,
+    #fff 67%,
+    #e01414 0
+  );
+}
